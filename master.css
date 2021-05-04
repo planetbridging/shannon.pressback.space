@@ -10,11 +10,16 @@ body, html{
 #Content{
 	width: 90%;
 	height: calc(90% - 100px);
-	background-color: aqua;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow-y: auto;
+}
+
+#Me {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
 }
 
 footer {
@@ -25,3 +30,50 @@ footer {
 	bottom: 0px;
 	width: 100%;
   }
+
+
+  @media all and (min-width: 1024px) {
+
+	  .homeItems {
+  
+		  width: 30%;
+		  text-align: center;
+		}
+  }
+  
+  @media screen and (min-width:768px) and (max-width:1024px){
+
+	
+		.homeItems {
+  
+			width: 45%;
+			text-align: center;
+		  }
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+
+	
+		.homeItems {
+  
+			width: 100%;
+			text-align: center;
+		  }
+  }
+  
+  .homeItems{
+	  background-color: rgba(255, 255, 255, 0.65);
+	  border-radius: 10px;
+	  padding: 10px;
+	  margin-top: 20px;
+  }
+
+  .windowSteps {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-bottom: 20px;
+}
