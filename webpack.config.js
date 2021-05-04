@@ -24,7 +24,7 @@ module.exports = {
               {
                 test: /\.html$/i,
                 loader: 'html-loader',
-                options: {esModule: false},
+                options: {esModule: false,sources: false},
               },
           ],
     },
